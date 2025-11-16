@@ -1,28 +1,23 @@
-BrightTV Viewership Analytics — Case Study
-Driving Subscriber Growth Through Data Insights
-🧠 Project Overview
+# BrightTV Viewership Analysis
 
-BrightTV’s CEO wants to increase subscriptions and drive higher daily consumption for the upcoming financial year.
-This project uses user-level and session-level transaction data to:
 
-Understand usage patterns
+This repository contains code, summaries and a 20-minute presentation to help BrightTV's Customer Value Management (CVM) team grow the subscription base.
 
-Identify consumption drivers
 
-Recommend content strategy for low-consumption days
+## Contents
+- `data/` - place the original `BrightTV_Viewership.csv` here (DO NOT commit PII to public repos).
+- `data_summary/` - generated CSV summaries (daily, hourly, weekday, top channels).
+- `notebooks/` - Jupyter notebook for exploratory analysis.
+- `scripts/` - python scripts to run the analysis and create the presentation automatically.
+- `outputs/` - charts and generated PPTX.
+- `recommendations.md` - tactical recommendations and initiatives for CVM.
 
-Suggest CVM initiatives to grow the user base
 
-Convert all timestamps from UTC → SA Time (UTC+2)
+## How to run
+1. Create a Python 3.9+ virtual environment and activate it:
 
-This repository contains the full analytical workflow, insights, code base, and final presentation.
 
-🎯 Business Questions Answered
-
-What are the user and usage trends on BrightTV?
-
-Which factors influence consumption (user profile, device, genre, session length, etc.)?
-
-Which content categories can increase activity on low-consumption days?
-
-What can the business do to grow the total subscriber base?
+```bash
+python -m venv .venv
+source .venv/bin/activate # macOS / Linux
+.\.venv\Scripts\activate # Windows
